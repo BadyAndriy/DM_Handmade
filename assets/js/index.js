@@ -15,105 +15,105 @@ $(document).ready(function(){
   })
 });
 // =======================================================
-new Swiper('.content-slider',{
+// new Swiper('.content-slider',{
 
-  navigation: {
-    nextEl: '.slider__button-next',
-    prevEl: '.slider__button-prev',
-  },
+//   navigation: {
+//     nextEl: '.slider__button-next',
+//     prevEl: '.slider__button-prev',
+//   },
 
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-  },
+//   pagination: {
+//     el: '.swiper-pagination',
+//     type: 'fraction',
+//   },
 
-  // включення/виключення
-  // свайп
-  simulateTouch: true,
+//   // включення/виключення
+//   // свайп
+//   simulateTouch: true,
 
-  // чутливість
-  touchRatio: 1,
+//   // чутливість
+//   touchRatio: 1,
 
-  // кут спрацьовування свайпа
-  touchAngel: 45,
+//   // кут спрацьовування свайпа
+//   touchAngel: 45,
 
-  // курсор перетягування
-  grabCursor: false,
+//   // курсор перетягування
+//   grabCursor: false,
 
-  // переключення по кліку на слайд
-  slideToClickedSlide: false,
+//   // переключення по кліку на слайд
+//   slideToClickedSlide: false,
 
-  // управління клавіатурою
-  keyboard: {
-    // вкл\викл
-    enable: true,
-    // вкл\викл
-    // тільки коли слайдер в межах вюпорта
-    onlyInViewport: true,
-    // вкл\викл
-    // управління клавішами PgUp, PgDown
-    pageUpDown: true,
-  },
+//   // управління клавіатурою
+//   keyboard: {
+//     // вкл\викл
+//     enable: true,
+//     // вкл\викл
+//     // тільки коли слайдер в межах вюпорта
+//     onlyInViewport: true,
+//     // вкл\викл
+//     // управління клавішами PgUp, PgDown
+//     pageUpDown: true,
+//   },
 
-  // управління колесом миші
-  mousewheel: {
-    sensitivity: 1,
-    // клас об'єкта на якому буде спрацьовувати прокрутка мишкою
-    eventsTarget: ".main9__slide",
-  },
+//   // управління колесом миші
+//   mousewheel: {
+//     sensitivity: 1,
+//     // клас об'єкта на якому буде спрацьовувати прокрутка мишкою
+//     eventsTarget: ".main9__slide",
+//   },
 
-  // автовисота
-  autoHeight: false,
+//   // автовисота
+//   autoHeight: false,
 
-  // кількість слайдів для показу
-  slidesPerView: 1,
+//   // кількість слайдів для показу
+//   slidesPerView: 1,
 
-  // відключення функції slidesPerView
-  // якщо слайдів менше ніж треба
-  watchOverflow: true,
+//   // відключення функції slidesPerView
+//   // якщо слайдів менше ніж треба
+//   watchOverflow: true,
 
-  // відступи між слайдами
-  spaceBetween: 0,
+//   // відступи між слайдами
+//   spaceBetween: 0,
 
-  // кількість пролистуваних слайдів
-  slidesPerGroup: 1,
+//   // кількість пролистуваних слайдів
+//   slidesPerGroup: 1,
 
-  // активний слайд по центру
-  centeredSlides: true,
+//   // активний слайд по центру
+//   centeredSlides: true,
 
-  // стартовий слайд
-  initialSlide: 1,
+//   // стартовий слайд
+//   initialSlide: 1,
 
-  // нескінечний слайдер
-  loop: true,
+//   // нескінечний слайдер
+//   loop: true,
 
-  // вільний режим перегортання слайдів
-  freeMode: false,
+//   // вільний режим перегортання слайдів
+//   freeMode: false,
 
-  // автопрокрутка
-  autoplay: {
-    delay: 5000,
-    stopOnLastSlide: false,
-    // відключити після ручного переключення
-    disableOnInteraction: false,
-  },
+//   // автопрокрутка
+//   autoplay: {
+//     delay: 5000,
+//     stopOnLastSlide: false,
+//     // відключити після ручного переключення
+//     disableOnInteraction: false,
+//   },
 
-  // скорість переключення слайдів
-  speed: 300,
+//   // скорість переключення слайдів
+//   speed: 300,
 
-  // ефект перелистування
-  effect: 'fade',
-  fadeEffect: {
-    crossFade: true
-  },
+//   // ефект перелистування
+//   effect: 'fade',
+//   fadeEffect: {
+//     crossFade: true
+//   },
 
-  // адаптив
-  breakpoints: {
-    320: {
+//   // адаптив
+//   breakpoints: {
+//     320: {
 
-    },
-  },
-});
+//     },
+//   },
+// });
 // =======================================================
 
 // =======================================================
