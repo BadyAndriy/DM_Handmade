@@ -79,7 +79,88 @@ h1, h2, h3, h4, h5, h6 {
 /*  */
 /*  */
 /*  */
-/*  */
+/* content__article */
+.content__article {
+  width: 100%;
+  padding: 160px calc(10px + (80 - 10) * ((100vw - 320px) / (2560 - 320))) 0 calc(10px + (80 - 10) * ((100vw - 320px) / (2560 - 320)));
+}
+.content__article .article__slider {
+  width: 100%;
+  height: 100%;
+}
+.content__article .article__slider .big-slider .slider__wrapper .slider__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 10px 0;
+}
+.content__article .article__slider .big-slider .slider__wrapper .slider__slide img {
+  width: 38%;
+  max-height: 700px;
+}
+.content__article .article__slider .big-slider .slider__button-prev {
+  left: 35px;
+}
+.content__article .article__slider .big-slider .slider__button-next {
+  right: 35px;
+}
+.content__article .article__slider .big-slider .slider__button-prev:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100px;
+  color: #000;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+.content__article .article__slider .big-slider .slider__button-next:after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 100px;
+  color: #000;
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+}
+.content__article .article__slider .mini-slider .mini__wrapper .mini__slide {
+  opacity: 0.3;
+}
+.content__article .article__slider .mini-slider .mini__wrapper .mini__slide .mini__slide-img {
+  position: relative;
+  padding: 0 0 49% 0;
+  cursor: pointer;
+}
+.content__article .article__slider .mini-slider .mini__wrapper .mini__slide .mini__slide-img img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.content__article .article__slider .mini-slider .mini__wrapper .mini__slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+.content__article .article__description {
+  width: 100%;
+  height: 1000px;
+}
+
 /* content__goods */
 .content__goods {
   display: -webkit-box;
@@ -139,6 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  min-height: 100px;
   margin: 0 auto;
   padding: 50px 0;
   border-left: 1px solid rgba(0, 0, 0, 0.2);
@@ -159,11 +241,8 @@ h1, h2, h3, h4, h5, h6 {
 .content__goods .goods__items .goods__item .goods__img img {
   max-width: 100%;
 }
-.content__goods .goods__items .goods__item .goods__title {
-  padding: 10px;
-}
 .content__goods .goods__items .goods__item .goods__title h2 {
-  margin: 0 0 30px 0;
+  margin: 10px 0 30px 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
   line-height: 120%;
@@ -186,6 +265,13 @@ h1, h2, h3, h4, h5, h6 {
 .content__goods .goods__items .goods__item:hover {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content__goods.gallery {
+  padding: 160px calc(10px + (80 - 10) * ((100vw - 320px) / (2560 - 320)));
+}
+.content__goods.gallery .goods__items .goods__item .goods__title h2 {
+  margin: 10px 0 0 0;
 }
 
 .content__goods.w30cm .goods__item.w30cm {
@@ -388,6 +474,27 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 
+#header.black .header__logo a img {
+  -webkit-filter: invert(0%);
+          filter: invert(0%);
+}
+#header.black .header__menu a {
+  color: #000;
+  border: 1px solid #000;
+}
+#header.black .header__menu a:hover {
+  color: #fff;
+  background: #000;
+}
+#header.black .header__contacts a {
+  color: #000;
+  border: 1px solid #000;
+}
+#header.black .header__contacts a:hover {
+  color: #fff;
+  background: #000;
+}
+
 #header.out {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
@@ -398,8 +505,12 @@ h1, h2, h3, h4, h5, h6 {
 #header.scroll {
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background: #fff;
+}
+#header.scroll .header__logo a {
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
 }
 #header.scroll .header__logo a img {
   -webkit-filter: invert(0%);
