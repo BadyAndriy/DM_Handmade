@@ -48,17 +48,15 @@ new Swiper('.big-slider',{
     prevEl: '.slider__button-prev',
   },
 
-  // міні картинки слайдів
-  thumbs: {
-    swiper: {
-      el: '.mini-slider',
-      slidesPerView: 8,
-    }
+  // крапки навігації
+  pagination: {
+    el: '.slider__pagination',
+    type: 'fraction',
   },
 
   // включення/виключення
   // свайп
-  simulateTouch: true,
+  simulateTouch: false,
 
   // чутливість
   touchRatio: 1,
